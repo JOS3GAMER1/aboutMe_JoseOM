@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jose Marrero</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    h1{
+      font-family:'Gill Sans','Arial';
+      font-size:1000%;
+      color:red;
+      text-align: center;
+    }
+
+    
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      position:fixed;
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    .buttons{
+    border-color: red;
+    border-width: 5px;
+    border-style: dashed;
+    
+    }
+
+    .silver-background{
+    background-color:silver;
+    }
+    .centering{
+      position:fixed;
+      right:50%;
+      text-align:center;
+    }
+  </style>
+</head>
+<body class="silver-background">
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Jose Marrero's Website</a>
+    </div>
+    
+</nav>
+  
+
+<h1>About me</h1>
+<div class="container-fluid centering">
+
+
+<!--image-->
+<img src=https://scontent-mia3-1.cdninstagram.com/v/t51.2885-19/s150x150/79844330_818358945278941_6534850100152238080_n.jpg?_nc_ht=scontent-mia3-1.cdninstagram.com&_nc_ohc=h0n1GZsLnuYAX-0XWTl&oh=80b31016eec2fb38bd56ffe0adff2cd0&oe=5FA695BE></img>
+
+<!--paragraphs-->
+<p>hey, I'm a <a target='_blank'href= https://en.wikipedia.org/wiki/Human#:~:text=Humans%20%28Homo%20sapiens%29%20are%20highly%20intelligent%20primates%20that,the%20family%20Hominidae%20%28the%20great%20apes%2C%20or%20hominids%29.>human</a></p>
+<p>I study at <a target='_blank'href=https://miamisouthridgeshs.com>Miami Southridge</a></p>
+<p id=theP></p>
+
+
+<!--button-->
+<button type="button" class="btn btn-danger"onclick="myFunction()">More about me</button>
+</div>
+<!--footer-->
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+<script>
+  function myFunction(){
+    document.getElementById("theP").innerHTML="I coded this webpage"
+  }
+</script>
+</body>
+</html>
